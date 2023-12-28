@@ -1,0 +1,91 @@
+body {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #111;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  max-width: 1166px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+/*** Header ***/
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+.container.is-flex {
+  display: flex;
+}
+.header__nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 90px;
+}
+.main-logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-right: auto;
+}
+.main-logo span {
+  font-style: italic;
+}
+.menu__list {
+  display: flex;
+  gap: 24px;
+}
+.menu__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.social-menu__list {
+  display: flex;
+  gap: 14px;
+}
+/* ! Wait, untile lesson */
+/* .social-menu__link:hover svg,
+.social-menu__link:active svg {
+  fill: #fd9222;
+} */
