@@ -42,11 +42,11 @@
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              ><img
-                src="./img/instagram.svg"
-                alt="instagram logo"
-                aria-label="instagram link"
-            /></a>
+            >
+              <svg class="social-menu__icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
           <li>
             <a
@@ -54,11 +54,11 @@
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              ><img
-                src="./img/facebook.svg"
-                alt="facebook logo"
-                aria-label="facebook link"
-            /></a>
+            >
+              <svg class="social-menu__icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li>
             <a
@@ -66,15 +66,16 @@
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              ><img
-                src="./img/twitter.svg"
-                alt="twitter logo"
-                aria-label="twitter link"
-            /></a>
+            >
+              <svg class="social-menu__icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
     </header>
+
     <main>
       <!--* Section - Hero *-->
       <section class="section-hero">
@@ -362,7 +363,7 @@
           </ul>
         </div>
       </section>
-      <!--! Section - Sellers -->
+      <!--* Section - Sellers -->
       <section class="section-sellers">
         <div class="container">
           <h2 class="section-heading"><span>Top</span> sellers</h2>
@@ -375,7 +376,9 @@
                 width="368"
                 height="464"
               />
-              <h3 class="item-heading">CHOCOLATE WITH NUTS</h3>
+              <div class="sellers-item__bottom">
+                <h3 class="item-heading">CHOCOLATE WITH NUTS</h3>
+              </div>
             </li>
             <li class="sellers__list-item">
               <img
@@ -385,7 +388,9 @@
                 width="368"
                 height="464"
               />
-              <h3 class="item-heading">CHOCOLATE WITH FRUITS</h3>
+              <div class="sellers-item__bottom">
+                <h3 class="item-heading">CHOCOLATE WITH FRUITS</h3>
+              </div>
             </li>
             <li class="sellers__list-item">
               <img
@@ -395,7 +400,9 @@
                 width="368"
                 height="464"
               />
-              <h3 class="item-heading">DARK CHOCOLATE</h3>
+              <div class="sellers-item__bottom">
+                <h3 class="item-heading">DARK CHOCOLATE</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -458,49 +465,114 @@
         </div>
       </section>
     </main>
-    <footer>
+
+    <footer class="footer">
       <div class="container">
-        <p>Chocolate a delicious cure for a bad day</p>
-        <h3>Social networks</h3>
-        <ul>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              ><img
-                src="./img/instagram.svg"
-                alt="instagram logo"
-                aria-label="instagram link"
-            /></a>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              ><img
-                src="./img/facebook.svg"
-                alt="facebook logo"
-                aria-label="facebook link"
-            /></a>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              ><img
-                src="./img/twitter.svg"
-                alt="twitter logo"
-                aria-label="twitter link"
-            /></a>
-          </li>
-        </ul>
-        <h3>Contact us</h3>
-        <address>
-          <a href="call:380684439426">+380 (68) 443-94-26</a>
-          <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
-        </address>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">How it’s made?</a></li>
-            <li><a href="#">Chocolate is loved</a></li>
+        <div class="footer__top">
+          <p class="footer__slogan">
+            <span>Chocolate</span> a delicious cure for a bad day
+          </p>
+          <div class="footer__col">
+            <h3 class="footer__list-heading">Social networks</h3>
+            <ul class="footer__social-list">
+              <li class="footer__social-list-item">
+                <a
+                  class="social-menu__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="social-menu__icon is-footer"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./img/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-list-item">
+                <a
+                  class="social-menu__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="social-menu__icon is-footer"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./img/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-list-item">
+                <a
+                  class="social-menu__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="social-menu__icon is-footer"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./img/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__list-heading">Contact us</h3>
+            <address>
+              <ul class="footer__address-list">
+                <li class="footer__address-list-item">
+                  <a href="call:380684439426" class="footer__address-link"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+                <li class="footer__address-list-item">
+                  <a
+                    href="mailto:simplychoc@gmail.com"
+                    class="footer__address-link"
+                    >simplychoc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <div class="footer__line" />
+      </div>
+      <div class="footer__bottom">
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list-item">
+              <a href="#" class="footer__nav-link">Home</a>
+            </li>
+            <li class="footer__nav-list-item">
+              <a href="#" class="footer__nav-link">How it’s made?</a>
+            </li>
+            <li class="footer__nav-list-item">
+              <a href="#" class="footer__nav-link">Chocolate is loved</a>
+            </li>
           </ul>
         </nav>
         <!-- TODO: Subscription Form -->
+        <form class="footer__form">
+          <input
+            class="footer__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button class="button" type="submit">Subscribe</button>
+        </form>
       </div>
     </footer>
   </body>
