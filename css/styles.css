@@ -546,6 +546,13 @@ address {
   color: #111111;
   border: 1px solid #fd9222;
   margin: 0 auto;
+  display: block;
+  transition: background 150ms ease-in-out;
+}
+.button.is-testimonials:hover,
+.button.is-testimonials:focus {
+  color: #fff;
+  background-color: #fd9222;
 }
 
 /*** Footer ***/
