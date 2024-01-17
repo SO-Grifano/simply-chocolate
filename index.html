@@ -567,5 +567,75 @@
         </form>
       </div>
     </footer>
+
+    <div class="backdrop-overlay is-open">
+      <div class="modal">
+        <svg class="modal__close-btn" width="28" height="28">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+        <p class="modal__title">
+          LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
+        </p>
+        <form class="modal__form">
+          <div class="modal__form-field">
+            <label class="modal__label" for="user-name">Name</label>
+            <div class="modal__input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                required
+                id="user-name"
+                class="modal__input"
+              />
+              <svg class="modal__input-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__form-field">
+            <label class="modal__label" for="user-email">Email</label>
+            <div class="modal__input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                required
+                id="user-email"
+                class="modal__input"
+              />
+              <svg class="modal__input-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__form-field">
+            <label class="modal__label" for="user-phone">Phone number</label>
+            <div class="modal__input-wrap">
+              <input
+                type="tel"
+                name="user-phone"
+                required
+                id="user-phone"
+                class="modal__input"
+              />
+              <svg class="modal__input-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__form-field">
+            <label class="modal__label" for="message">Comment</label>
+            <div class="modal__input-wrap">
+              <textarea
+                name="message"
+                placeholder="Enter text"
+                id="message"
+                class="modal__textarea"
+              ></textarea>
+            </div>
+          </div>
+          <button class="button">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
