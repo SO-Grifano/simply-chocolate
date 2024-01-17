@@ -104,7 +104,10 @@ address {
 .main-logo span {
   font-style: italic;
 }
-
+.main-logo__icon {
+  stroke: #fd9222;
+  fill: none;
+}
 .menu__list {
   display: flex;
   gap: 24px;
@@ -151,8 +154,14 @@ address {
   align-items: start;
   padding: 40px;
   border-radius: 30px;
-  background-color: rgba(17, 17, 17, 0.6);
   min-height: 600px;
+  background-color: rgba(17, 17, 17, 0.6);
+  background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.9) 100%
+    ),
+    url(../img/chocolate_main.jpg) center / cover no-repeat;
 }
 
 .main-heading {
@@ -222,6 +231,23 @@ address {
   flex-shrink: 0;
   background-color: #fff;
   border-radius: 100%;
+}
+.button-scroll__icon {
+  transition: background 150ms ease-in-out;
+}
+
+.button-scroll__chevron {
+  transition: fill 150ms ease-in-out;
+  fill: #fd9222;
+}
+
+.button-scroll:hover .button-scroll__icon,
+.button-scroll:focus .button-scroll__icon {
+  background-color: #fd9222;
+}
+.button-scroll:hover .button-scroll__chevron,
+.button-scroll:focus .button-scroll__chevron {
+  fill: #fff;
 }
 
 /*** Section - Features ***/
